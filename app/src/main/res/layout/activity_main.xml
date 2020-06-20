@@ -22,9 +22,14 @@
             android:textSize="15pt" />
         <Spinner
             android:id="@+id/year_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goMake"
+        android:text="Next"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,13 +38,18 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Model"
+            android:text="Make"
             android:textSize="15pt" />
         <Spinner
-            android:id="@+id/model_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:id="@+id/make_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goModel"
+        android:text="Next"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,15 +59,15 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Make"
+            android:text="Model"
             android:textSize="15pt"
             tools:layout_editor_absoluteX="18dp"
             tools:layout_editor_absoluteY="126dp" />
 
         <Spinner
-            android:id="@+id/make_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:id="@+id/model_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
     </LinearLayout>
     <Button
         android:layout_width="wrap_content"
@@ -72,6 +82,7 @@
         android:layout_height="match_parent"
         xmlns:android="http://schemas.android.com/apk/res/android">
         <LinearLayout
+            android:id="@+id/dynamicLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
