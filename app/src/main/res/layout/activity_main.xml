@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation = "vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp"
     tools:context=".MainActivity">
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,35 +19,57 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Year"
-            android:textSize="15pt"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="75dp" />
+            android:textSize="15pt" />
+        <Spinner
+            android:id="@+id/year_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp">
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Model"
-        android:textSize="15pt"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="188dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            android:textSize="15pt" />
+        <Spinner
+            android:id="@+id/model_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp">
 
-    <TextView
-        android:id="@+id/textView2"
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make"
+            android:textSize="15pt"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="126dp" />
+
+        <Spinner
+            android:id="@+id/make_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Make"
-        android:textSize="15pt"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="126dp" />
+        android:layout_gravity="center_horizontal"
+        android:text="Add Car"/>
+
+    <!--This will populate all of the cars added in-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     </LinearLayout>
 </LinearLayout>
